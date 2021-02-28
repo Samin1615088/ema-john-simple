@@ -1,0 +1,30 @@
+header div {
+  text-align: center;
+}
+header img {
+  height: 80px;
+}
+
+nav {
+  background-color: black;
+  line-height: 40px;
+}
+
+nav ul {
+  margin-bottom: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  width: auto;
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+}
+nav a:hover {
+  background-color: gray;
+  padding: 10px ;
+}
