@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ProductDetail from './Components/ProductDetail/ProductDetail';
 
 function App() {
   return (
@@ -30,7 +31,10 @@ function App() {
           <Route exact path="/">
             <Shop></Shop>
           </Route>
-          <Route path="/">
+          <Route path="/product/:productKey">
+            <ProductDetail></ProductDetail>
+          </Route>
+          <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>

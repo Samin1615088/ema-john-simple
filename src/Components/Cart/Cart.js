@@ -2,7 +2,6 @@ import React from 'react';
 
 const Cart = (props) => {
     const products = props.cart;
-
     //Numbers Formatter 
     const formatter = (number) => {
         let stringNum = Number(number).toFixed(2);
