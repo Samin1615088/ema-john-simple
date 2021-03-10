@@ -30,7 +30,7 @@ const Cart = (props) => {
     return (
         <div>
             <h2>Order Summery</h2>
-            <h3>Items Order: {products.length}</h3>
+            <h3>Items Ordered: {products.length}</h3>
             <div>
                 <p><strong>Items:</strong> $ {totalBasePrice}</p>
                 <p><strong>Shipping & Handling:</strong> $ {handlingCost}</p>
