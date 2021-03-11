@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
     const products = props.cart;
+    console.log(products);
     //Numbers Formatter 
     const formatter = (number) => {
         let stringNum = Number(number).toFixed(2);
@@ -36,7 +38,7 @@ const Cart = (props) => {
                 <p><strong>Total before tax:</strong> $ {totalPriceBeforeTax}</p>
                 <p><strong>Estimated Tax:</strong> $ {totalTax}</p>
                 <h5><strong>Order Total:</strong>  $ {grandTotalPrice}</h5>
-                <button className="main-button">Review your order</button>
+                <Link to="/review"><button className="main-button">Review your order</button></Link>
             </div>
         </div>
     );
