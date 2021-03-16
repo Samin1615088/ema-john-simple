@@ -24,7 +24,6 @@ const Shop = () => {
                 {
                     products.map((product) => <Product
                         product={product} handleAddToCartEvent={handleAddToCartEvent} showAddToCart={true} key={product.key}>
-                        
                     </Product>)
                 }
             </div>
